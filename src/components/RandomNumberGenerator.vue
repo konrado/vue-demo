@@ -2,12 +2,13 @@
 import { computed, onMounted, reactive, ref } from 'vue'
 import { CheckCircleIcon } from '@heroicons/vue/24/solid'
 
-defineProps<{ min: number, max: number }>()
+const props = defineProps<{ min: number, max: number }>()
 
 const state = reactive({
-  min: 0,
-  max: 100,
+  min: props.min,
+  max: props.max,
 })
+
 const generated = ref<number>(0);
 
 const divisorsToCheck: Set<number> = new Set([
