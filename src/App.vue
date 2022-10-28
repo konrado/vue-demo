@@ -7,13 +7,12 @@ import RandomNumberGenerator from "./components/RandomNumberGenerator.vue";
 <template>
   <div class="flex h-screen">
     <div class="m-auto">
-      <h1 class="text-3xl font-bold mb-6 text-center text-green-700">Number generator</h1>
+      <h1 class="text-3xl font-bold mb-6 text-center text-green-700">
+        Number generator
+      </h1>
       <RandomNumberGenerator :min="0" :max="100" />
     </div>
-
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
